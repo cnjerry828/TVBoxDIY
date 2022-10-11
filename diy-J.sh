@@ -37,7 +37,7 @@ echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 #sed -i 's/mContext, 300/mContext, 400/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/adapter/HistoryAdapter.java
 #添加PY支持
 #wget --no-check-certificate -qO- "https://raw.githubusercontent.com/UndCover/PyramidStore/main/aar/pyramid-0922.aar" -O $CURRENT_DIR/$DIR/app/libs/pyramid.aar
-cp -f $CURRENT_DIR/DIY/pyramid1010.aar $CURRENT_DIR/$DIR/app/libs/pyramid.aar
+cp -f $CURRENT_DIR/DIY/pyramid1011.aar $CURRENT_DIR/$DIR/app/libs/pyramid.aar
 sed -i "/thunder.jar/a\    implementation files('libs@pyramid.aar')" $CURRENT_DIR/$DIR/app/build.gradle
 sed -i 's#@#\\#g' $CURRENT_DIR/$DIR/app/build.gradle
 sed -i 's#pyramid#\\pyramid#g' $CURRENT_DIR/$DIR/app/build.gradle
